@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SMove
+public class SMove : MonoBehaviour
 {
     protected string m_name;
     protected Transform m_playerTransform;
-
+    
     public SMove(string _name_, Transform _playerTransform_)
     {
         m_name = _name_;
