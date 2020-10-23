@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class SMGrow : SMove
 {
+    private float growthScalar = 2F;
     public SMGrow(Transform _playerTransform_) :
          base("grow", _playerTransform_)
     {
 
     }
-
+    public float growth_Scale
+    {
+        set { this.growthScalar = value; }
+    }
     public override void Activate()
     {
-        float growthScalar = 2F;
-
+    
         m_playerTransform.localScale = m_playerTransform.localScale *= growthScalar;
     }
 }
