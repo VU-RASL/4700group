@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{CEAD94DA-8CB8-E6A7-0D5F-06DEE5240E28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{32003319-3571-32A6-795C-0E62D23A797A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D3164391-A776-A098-5681-9E7ECC70AC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{32003319-3571-32A6-795C-0E62D23A797A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Sprite.Editor", "Unity.2D.Sprite.Editor.csproj", "{9BD49E47-250F-1C27-280E-8AE14AC17E14}"
 EndProject
@@ -25,14 +25,14 @@ Global
 		{CEAD94DA-8CB8-E6A7-0D5F-06DEE5240E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEAD94DA-8CB8-E6A7-0D5F-06DEE5240E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEAD94DA-8CB8-E6A7-0D5F-06DEE5240E28}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32003319-3571-32A6-795C-0E62D23A797A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32003319-3571-32A6-795C-0E62D23A797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32003319-3571-32A6-795C-0E62D23A797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32003319-3571-32A6-795C-0E62D23A797A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3164391-A776-A098-5681-9E7ECC70AC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3164391-A776-A098-5681-9E7ECC70AC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3164391-A776-A098-5681-9E7ECC70AC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3164391-A776-A098-5681-9E7ECC70AC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32003319-3571-32A6-795C-0E62D23A797A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32003319-3571-32A6-795C-0E62D23A797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32003319-3571-32A6-795C-0E62D23A797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32003319-3571-32A6-795C-0E62D23A797A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BD49E47-250F-1C27-280E-8AE14AC17E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BD49E47-250F-1C27-280E-8AE14AC17E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BD49E47-250F-1C27-280E-8AE14AC17E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
