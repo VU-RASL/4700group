@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Ground
   - Wall
-  - Gate
-  - Start
   layers:
   - Default
   - TransparentFX
