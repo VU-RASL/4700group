@@ -90,7 +90,12 @@ public class PlayerController : MonoBehaviour
     }
     void setCountText()
     {
+        try
+        {
         countText.text = "Count: " + count.ToString();
+        }
+        catch{}
+        
 
     }
 
