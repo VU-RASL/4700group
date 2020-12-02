@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private int count;
     public GameObject gateWall;
     private bool StartCrossed;
+    private bool displayText = false;
+    private GUIStyle gUIStyle = new GUIStyle();
     void Start()
     {
         input = GameObject.FindObjectOfType<InputManager>();
@@ -84,18 +86,14 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = newPos;
         m_rigidbody.velocity = Vector3.zero;
+        
         count = 0;
         setCountText();
 
     }
     void setCountText()
     {
-        try
-        {
         countText.text = "Count: " + count.ToString();
-        }
-        catch{}
-        
 
     }
 
@@ -105,7 +103,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-
+        displayText = true;
         Debug.Log("colided1 "+ other.gameObject.tag);
         if(other.gameObject.tag == "Start")
         {
@@ -140,6 +138,22 @@ public class PlayerController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 Debug.Log("wall colided " + other.gameObject.tag);
             }
+        }
+    }
+    void OnTriggerExit()
+    {
+        displayText = true;
+    }
+    void OnGUI()
+    {
+        gUIStyle.fontSize = 20;
+        
+        if(displayText==true)
+        {
+            GUI.Label(new Rect(400, 200, 400, 400), "     for (int count=0; count<3;count++)"+
+                "\n" + "     {" + "\n" + "    if (ball touches yellow line and ball touches red line)" +"\n"+ 
+                "    {" +"\n" +"     count = "+count + " + 1;" +"\n"+"    }"+"\n"+"    if(ball touches portal)"+
+                "\n"+"    {" + "\n" + "     count=0" + "\n"+"    }" + "}",gUIStyle);
         }
     }
     
